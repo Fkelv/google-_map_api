@@ -242,8 +242,8 @@
 
                 console.log(`${city1}- ${description1}`);
                 // Convert temperatures from Kelvin to Fahrenheit
-                temperature1 = Math.round((temperature1 - 273.15) * 9) / 5 + 32;
-                temperature2 = Math.round((temperature2 - 273.15) * 9) / 5 + 32;
+                // temperature1 = Math.round((temperature1 - 273.15) * 9) / 5 + 32;
+                // temperature2 = Math.round((temperature2 - 273.15) * 9) / 5 + 32;
 
                 // Define your API key and endpoint for distance calculation
                 var distanceApiKey = "AIzaSyAXnnpECMhpCSe4AS6rYSF7oWobb0ZKSOY"; // Replace with your Distance Matrix API key
@@ -330,8 +330,8 @@
           ".\nCity: " +
           city1 +
           ".\ntemperature: " +
-          temperature1.toFixed(1) +
-          " degrees Fahrenheit" +
+          temperature1 +
+          "°c" +
           ".\nDescription: " +
           description1 +
           ".\n\nInterchange: " +
@@ -339,8 +339,8 @@
           ".\nCity: " +
           city2 +
           ".\ntemperature: " +
-          temperature2.toFixed(1) +
-          " degrees Fahrenheit" +
+          temperature2 +
+          "°c" +
           ".\nDescription: " +
           description2 +
           ".\n\nDriving Distance: " +
